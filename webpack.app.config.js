@@ -54,6 +54,12 @@ module.exports = [{
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      '@caicloud/demo-web': path.join(
+        __dirname,
+        './client/module.js'
+      ),
+    }
   },
   plugins: [
     new HtmlWebpackPlugin(),

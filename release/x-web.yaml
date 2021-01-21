@@ -1,7 +1,7 @@
 _config:
   _metadata:
     description: "A basic template for application"
-    name: x-web
+    name: demo-web
     namespace: default
     template:
       type: template.caicloud.io/application
@@ -9,7 +9,7 @@ _config:
     version: "v0.0.1"
   controllers:
     - containers:
-        - image: "[[ registry_release ]]/x-web:v0.0.1"
+        - image: "[[ registry_release ]]/demo-web:v0.0.1"
           imagePullPolicy: IfNotPresent
           resources:
             limits:

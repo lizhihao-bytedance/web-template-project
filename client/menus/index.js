@@ -1,10 +1,11 @@
 export default {
-  resources_center: {
-    group: 'x-web',
-    children: {
-      'cluster': {
-        text: 'cluster',
-        to: '/clusters',
+  application_center: {
+    group: '集群',
+    mod: 'resources_center',
+    routes: {
+      cluster: {
+        text: '新建集群',
+        path: '/clusters/create',
       },
     },
   },
